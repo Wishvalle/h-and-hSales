@@ -1,78 +1,96 @@
+import LogoMudan from '../assets/images/logoen.png';
+
+import kinkong1 from '../assets/images/asiastarImg/kingkong/kingkong_01.jpeg';
+
+import { KinkongIMGS } from '../assets/images/asiastarImg/kingkong/KinkongIMGS';
+
 export const busesBrands = [
+  
   {
     id: 'asiastar',
     name: 'AsiaStar',
     logoUrl: 'https://i.namu.wiki/i/1b9uXJEpZl13KNhqeR3N8f8LoEXXPxK5a1v2tqFrcyYWopoCYPADFI1wh_lb_eJpB1jadq-AaN6POlr6wsBUSQ.webp',
     models: [
       {
-        id: 'ybl6909h',
-        name: 'YBL6909H',
+        id: 'kingkong',
+        name: 'Serie King Kong',
         motor: 'combustion',
         category: 'interurbano',
-        description: 'El todoterreno versátil. Ideal para largas distancias y turismo de lujo, combinando confort y eficiencia.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202124954/ybl6909hq30191923890.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        description: 'La Serie King Kong de AsiaStar impone presencia y elegancia en cada kilómetro, diseñada para el transporte interurbano y turístico de alto nivel, combina líneas modernas con un interior espacioso y cómodo. Su estructura robusta, acompañada de tecnología confiable y un rendimiento eficiente, garantiza viajes seguros, placenteros y rentables para operadores y pasajeros por igual. Ideal para quienes buscan un equilibrio perfecto entre potencia, confort y prestigio.',
+        imageUrl: KinkongIMGS,
+        imageSpecs: '',
         specs: [
             {
-	    engine: 'WP7.240E51 (176KW，1050N.M，欧Ⅴ)',
-            dimension: ' 8990×2550×3435',
-            neumatico: 'Neumáticos estándar Jiatong 255/70R22.5 ( con neumático de repuesto)',
-            disposicion_de_asientos: '2+2',
+            dimension: ' 12010x2550x3900 / 12600×2550×3800',
+            neumatico: 'Neumáticos estándar doble linea 315/80R22.5 ( con neumático de repuesto)',
             velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'39+1',
-
-        }],
-        size: '9m'
-      },
-      {
-        id: 'ybl6129t',
-        name: 'YBL6129T',
-        motor: 'combustion',
-        category: 'urbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/202309071441188b8c74d6c3004c0caebc6e52b3b6ee33.png?size=800x0',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
-        ],
-        
-        specs: [
-            {
-	    engine: 'WP615.46 (266 KW, 1460N.M, europeoII)',
-            dimension:  '12010×2550×3900',
-            neumatico: 'Neumáticos estándar doble moneda 315/80R22.5 (6+1 con rueda de repuesto)',
-            disposicion_de_asientos: '2+2',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
             cantidad_de_asientos:'53+1+1',
 
         }],
-        size: '12m'
+        size: '12m y 12.5m'
       },
       {
-        id: 'ybl6121h12',
-        name: 'YBL6121H',
+        id: 'ybl6110hybl6121h',
+        name: 'YBL6110H / YBL6121H',
         motor: 'combustion',
-        category: 'microbus',
-        description: 'Compacto, ágil y versátil. Perfecto para rutas cortas, transporte de personal o servicios especiales.',
+        category: 'interurbano',
+        description: 'Los modelos YBL6110H y YBL6121H de AsiaStar están diseñados para ofrecer un viaje interurbano cómodo, eficiente y moderno. Su diseño aerodinámico mejora el rendimiento en carretera, mientras que el interior amplio y ergonómico asegura confort tanto para pasajeros como conductores. Perfecto para empresas de transporte y turismo que buscan confiabilidad y elegancia en cada ruta.',
         imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230907095835da84cf83128b4b5992fbaf3f0acd8372.png?size=800x0',  
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Microbús+Sprinter+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Microbús+Sprinter+2',
+          'https://es.asiastarbuses.com/uploads/202324954/ybl6121h88d97566-32ce-4eee-b6d1-1fe01a684932.png',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
         ],
+        imageSpecs: '',
         specs: [
             {
-            engine: 'WP10.336E53',
-            dimension: ' 12000×2550×3620',
-            neumatico: 'NNeumáticos estándar 295/80R22.5 ( con neumático de repuesto)',
-            disposicion_de_asientos: '2+2',
+            dimension: ' 10690×2500×3670 / 12000×2550×3620',
+            neumatico: 'Neumáticos estándar Jiatong 11R22.5 ( con neumático de repuesto) / 295/80R22.5 ( con neumático de repuesto)',
             velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'49+1',
+            cantidad_de_asientos:'43+1 / 49+1',
+
+        }],
+        size: '10.5m y 12m'
+      },
+      {
+        id: 'ybl6128hybl6130hybl6148h',
+        name: 'YBL6128H / YBL6130H / YBL6148H',
+        motor: 'combustion',
+        category: 'interurbano',
+        description: 'Esta serie representa la excelencia del diseño asiático en transporte de larga distancia. Con acabados premium, amplio espacio interior y tecnología enfocada en la eficiencia, estos modelos combinan rendimiento y confort. Su estructura sólida y aerodinámica brinda estabilidad y seguridad en cada viaje, ideal para operadores turísticos y líneas interprovinciales que buscan prestigio y rentabilidad.',
+        imageUrl: [
+          'https://es.asiastarbuses.com/uploads/202324954/ybl6130ha8a6b5e8-dbed-4055-87b6-366df1c6e897.png',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
+        ],
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: '12000×2550×3860 / 12650×2550×3860 / 13680×2550×3860',
+            neumatico: 'Neumáticos Michelin y Jiatong ( con neumático de repuesto)',
+            velocidad_maxima: '120 km/h',
+            cantidad_de_asientos:'49+1+1 / 49+1 / 55+1',
+
+        }],
+        size: '12m, 12.5m y 13.5m'
+      },
+      {
+        id: 'ybl6128hx93',
+        name: 'YBL6128H（X9-3)',
+        motor: 'combustion',
+        category: 'interurbano',
+        description: 'El YBL6128H (X9-3) destaca por su elegancia exterior y su diseño interior optimizado para el confort. Perfecto para viajes de turismo o transporte ejecutivo, este modelo combina potencia, eficiencia y un acabado de alta gama. Su motor de combustión ofrece un rendimiento confiable, mientras que la estructura aerodinámica reduce el consumo y mejora la experiencia de conducción.',
+        imageUrl: [
+          'https://es.asiastarbuses.com/uploads/202324954/ybl6128h-x9-3d0bff2b5-91ca-474c-afd9-1cacaf62c4eb.jpg',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
+        ],
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: '12000×2550×3860',
+            neumatico: 'Neumáticos Michelin 295/80R22.5 ( con neumático de repuesto y soporte de elevación)',
+            velocidad_maxima: '120 km/h',
+            cantidad_de_asientos:'49+1+1',
 
         }],
         size: '12m'
@@ -81,200 +99,181 @@ export const busesBrands = [
         id: 'ybl6129h',
         name: 'YBL6129H',
         motor: 'combustion',
-        category: 'urbano',
-        description: 'La revolución eléctrica para la ciudad. Cero emisiones con la fiabilidad de Mercedes-Benz.',
+        category: 'interurbano',
+        description: 'El AsiaStar YBL6129H redefine el estándar del transporte interurbano con una mezcla equilibrada de potencia, confort y diseño moderno. Su estructura resistente y su interior ergonómico garantizan un viaje placentero incluso en trayectos largos. Ideal para operadores que buscan confiabilidad, estilo y eficiencia en un solo vehículo.',
         imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202124954/ybl6129h30517624834.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Eléctrico+eCitaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Eléctrico+eCitaro+2'
+          'https://www.asiastarbuses.com/uploads/202124954/ybl6129h30517624834.jpg',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
         ],
+        imageSpecs: '',
         specs: [
             {
-            engine: 'WP7.240E51 (176KW，1050N.M，欧Ⅴ',
-            dimension: ' 8990×2550×3435',
+            dimension: '12000×2550×3860',
+            neumatico: 'Neumáticos estándar ( con neumático de repuesto)',
+            velocidad_maxima: '120 km/h',
+            cantidad_de_asientos:'49+1+1',
+
+        }],
+        size: '12m'
+      },
+      {
+        id: 'ybl6829hybl6859hybl6909h',
+        name: 'YYBL6829H / YBL6859H / YBL6909H',
+        motor: 'combustion',
+        category: 'interurbano',
+        description: 'Compactos, eficientes y modernos, estos modelos son la solución perfecta para rutas interurbanas de media distancia. Su diseño versátil y aerodinámico permite un manejo ágil y estable, mientras que su interior está pensado para ofrecer comodidad sin comprometer la capacidad de pasajeros. Una opción rentable y confiable para flotas urbanas o turísticas.',
+        imageUrl: [
+          'https://es.asiastarbuses.com/uploads/202324954/ybl6859hdb5534de-f51a-4636-933b-2b2840975969.png',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
+        ],
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: '8245×2550×3420 / 8670×2550×3420 / 8990×2550×3435',
             neumatico: 'Neumáticos estándar Jiatong 255/70R22.5 ( con neumático de repuesto)',
-            disposicion_de_asientos: '2+2',
             velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'39+1',
+            cantidad_de_asientos:'33+1 / 35+1 / 39+1',
 
         }],
-        size: '12m'
+        size: '8m, 8.5m y 9m'
       },
       {
-        id: 'ybl6128hx93',
-        name: 'YBL6128H（X9-3)',
+        id: 'js6108',
+        name: 'JS6108',
         motor: 'combustion',
         category: 'urbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
+        description: 'El modelo JS6108 de AsiaStar combina eficiencia, resistencia y diseño moderno en un autobús ideal para el entorno urbano. Su construcción robusta y su interior funcional ofrecen una experiencia de viaje segura y cómoda, mientras que su motor eficiente reduce el consumo sin sacrificar rendimiento. Perfecto para flotas municipales y transporte público de alta demanda.',
         imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202324954/ybl6128h-x9-3d0bff2b5-91ca-474c-afd9-1cacaf62c4eb.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
+          'https://es.asiastarbuses.com/uploads/202324954/js6108089e1367-4c82-4609-93fe-1a2f656f007a.png',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
         ],
-        
+        imageSpecs: '',
         specs: [
             {
-	    engine: 'WP10.336E43',
-            dimension:  '12000×2550×3860',
-            neumatico: 'Neumáticos michelin 295/80R22.5 (con rueda de repuesto y soporte de elevación)',
-            disposicion_de_asientos: '/',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'49+1+1',
+            dimension: '10490×2550×3506',
+            neumatico: 'Neumáticos estándar 11R22.5 ( con neumático de repuesto)',
+            velocidad_maxima: '70 km/h',
+            cantidad_de_asientos:'24+1',
 
         }],
-        size: '12m'
+        size: '10.5m'
       },
       {
-        id: 'ybl6128hq1',
-        name: 'YBL6128HQ1',
+        id: 'js6108gha',
+        name: 'JS6108GHA',
         motor: 'combustion',
         category: 'urbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
+        description: 'El AsiaStar JS6108GHA representa la nueva generación de autobuses urbanos: diseño europeo, interiores ergonómicos y construcción liviana que reduce el consumo y aumenta la durabilidad. Su configuración versátil permite múltiples versiones y adaptaciones, garantizando un servicio eficiente, cómodo y elegante para pasajeros y operadores en cualquier ciudad.',
         imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/2023090711150712e17baa7d384734900d0df16bab7efe.png?size=800x0',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
+          'https://es.asiastarbuses.com/uploads/202024954/js6108gha09076589172.jpg',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
         ],
-        
+        imageSpecs: '',
         specs: [
             {
-	    engine: 'WP10.375（276KW,1460 NM,EuropaIII)',
-            dimension:  '12500×2550×3850',
-            neumatico: 'Neumáticos pirelli 295/80R22.5  (con rueda de repuesto)',
-            disposicion_de_asientos: '2+2',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'49+1+1',
+            dimension: '10490×2550×3120',
+            neumatico: 'Neumáticos estándar 11R22.5 ( con neumático de repuesto)',
+            velocidad_maxima: '70 km/h',
+            cantidad_de_asientos:'24+1',
 
         }],
-        size: '12m'
+        size: '10.5m'
       },
       {
-        id: 'ybl6130h',
-        name: 'YBL6130H',
-        motor: 'combustion',
+        id: 'js6181ghbev',
+        name: 'JS6181GHBEV',
+        motor: 'electrico',
+        category: 'urbano',
+        description: 'El AsiaStar JS6181GHBEV redefine el transporte urbano con su imponente diseño articulado de 18 metros y propulsión 100% eléctrica. Ofrece cero emisiones, funcionamiento silencioso y una experiencia de viaje suave y cómoda. Su amplio interior, con gran capacidad de pasajeros, lo convierte en la opción ideal para ciudades que apuestan por un transporte público moderno, eficiente y sostenible.',
+        imageUrl: [
+          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230908110228cd72254b4ae24123b222f56bd36124b9.jpg',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
+        ],
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: '18000×2550×3420',
+            neumatico: 'Neumáticos Michelin 275/70R22.5 ( con neumático de repuesto)',
+            velocidad_maxima: '70 km/h',
+            cantidad_de_asientos:'58+4+1/75',
+            puerto_de_carga: 'Enchufe UE CCS tipo 2',
+
+        }],
+        size: '18m'
+      },
+      {
+        id: 'ybl6129hbev',
+        name: 'YBL6129HBEV',
+        motor: 'electrico',
         category: 'interurbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
+        description: 'El modelo YBL6129HBEV ofrece el equilibrio perfecto entre elegancia, eficiencia y sostenibilidad. Con un diseño aerodinámico y motor totalmente eléctrico, garantiza cero emisiones y bajo costo operativo. Su interior cómodo y silencioso brinda una experiencia de viaje de alta calidad, ideal para transporte interurbano o turístico comprometido con el medio ambiente.',
         imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230907104329ff97eb29c7b149979d0752255828736e.png?size=800x0',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
+          'https://es.asiastarbuses.com/Content/uploads/2023571662/2023090810460762e91696ad794473b3cd910d09b50c61.jpg',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
         ],
-        
+        imageSpecs: '',
         specs: [
             {
-	    engine: 'WP615.46 (266KW, 1460N.M, Europa2)',
-            dimension:  '12650×2550×3860',
-            neumatico: 'Neumáticos Jiatong 12R22.5 (con rueda de repuesto)',
-            disposicion_de_asientos: '/',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'49+1',
+            dimension: '10500×2550×3420',
+            neumatico: 'Neumáticos estándar 275/70R22.5 ( sin neumático de repuesto)',
+            velocidad_maxima: '70 km/h',
+            cantidad_de_asientos:'24+1',
+            puerto_de_carga: 'Interfaz de carga externa (interfaz PLUG-IN)',
 
         }],
-        size: '12m'
+        size: '10.5m'
       },
       {
-        id: 'ybl6125h',
-        name: 'YBL6125H',
-        motor: 'combustion',
+        id: 'ybl6119hbev',
+        name: 'YBL6119HBEV',
+        motor: 'electrico',
         category: 'interurbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
+        description: 'El AsiaStar YBL6119HBEV es sinónimo de innovación eléctrica aplicada al transporte de pasajeros. Su diseño moderno y eficiente ofrece una conducción silenciosa y libre de emisiones, reduciendo costos de mantenimiento y operación. Ideal para recorridos interurbanos o corporativos que buscan combinar sostenibilidad, tecnología y comodidad en cada trayecto.',
         imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202024954/ybl6125h01462522259.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
+          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230908102828b5806c142d644c82b7178d6eb9a27157.jpg',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
         ],
-        
+        imageSpecs: '',
         specs: [
             {
-	    engine: 'WP10.336E53',
-            dimension:  '12000×2550×3850',
-            neumatico: 'Neumáticos estandar 295/80R22.5 (con rueda de repuesto)',
-            disposicion_de_asientos: '/',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'49+1',
+            dimension: '10990×2550×(3670 con A/C) o (3525 sin A/C)',
+            neumatico: 'Neumáticos estándar 295/80R22.5',
+            velocidad_maxima: '90 km/h',
+            cantidad_de_asientos:'30+1',
+            puerto_de_carga: 'SAEJ1772',
 
         }],
-        size: '12m'
+        size: '11m'
       },
       {
-        id: 'ybl6130t',
-        name: 'YBL6130T',
-        motor: 'combustion',
+        id: 'js6108ghbev',
+        name: 'JS6108GHBEV',
+        motor: 'electrico',
         category: 'urbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
+        description: 'El AsiaStar JS6108GHBEV combina la movilidad eléctrica con la eficiencia del diseño urbano. Compacto, ágil y totalmente libre de emisiones, este autobús ofrece un funcionamiento silencioso y sostenible. Su diseño interior ergonómico y adaptable lo hace perfecto para rutas urbanas con alta frecuencia, garantizando comodidad, accesibilidad y un bajo impacto ambiental.',
         imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/202309071441188b8c74d6c3004c0caebc6e52b3b6ee33.png?size=800x0',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
+          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230908093051e23982e0ee694c7a912b0c34c1d32a4c.jpg',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
+          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
         ],
-        
+        imageSpecs: '',
         specs: [
             {
-	    engine: 'WD615.46 (266 KW, 1460 N.M, europeoⅡ)',
-            dimension:  '12630×2550×3800',
-            neumatico: 'Neumáticos estándar doble moneda 315/80R22.5 (8+1 con rueda de repuesto)',
-            disposicion_de_asientos: '2+2',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'53+1+1',
+            dimension: '10500×2550×3050, (3230 con A/C techo medio) o (3420 con A/C techo alto)',
+            neumatico: 'Neumáticos estándar 275/70R22.5',
+            velocidad_maxima: '70 km/h',
+            cantidad_de_asientos:'24+1',
+            puerto_de_carga: 'SAEJ1772',
 
         }],
-        size: '12.5m'
-      },
-      {
-        id: 'ybl6121h',
-        name: 'YBL6121H',
-        motor: 'combustion',
-        category: 'urbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230907095835da84cf83128b4b5992fbaf3f0acd8372.png?size=800x0',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
-        ],
-        
-        specs: [
-            {
-	    engine: 'WP10.336E53',
-            dimension:  '12000×2550×3620',
-            neumatico: 'Neumáticos estándar 295/80R22.5(con rueda de repuesto)',
-            disposicion_de_asientos: '/',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'49+1',
-
-        }],
-        size: '12.5m'
-      },
-      {
-        id: 'ybl6140t',
-        name: 'YBL6140T',
-        motor: 'combustion',
-        category: 'urbano',
-        description: 'La solución eficiente para el transporte urbano. Su tecnología híbrida reduce el consumo y las emisiones.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/202309071441188b8c74d6c3004c0caebc6e52b3b6ee33.png?size=800x0',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+1',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Citaro+2',
-        ],
-        
-        specs: [
-            {
-	    engine: 'WP10.375 (276 KW, 1460 NM, europeo III)',
-            dimension:  '13500×2550×3800',
-            neumatico: 'Neumáticos estándar doble moneda 315/80R22.5 (8+1 con rueda de repuesto)',
-            disposicion_de_asientos: '2+2',
-            velocidad_maxima: '120 km/h',
-            tipo_de_conduccion:'LHD/RHD' ,
-            cantidad_de_asientos:'59+1+1',
-
-        }],
-        size: '13m'
+        size: '10.5m'
       }
 
     ]
@@ -286,27 +285,25 @@ export const busesBrands = [
   {
     id: 'mudan',
     name: 'Mudan',
-    logoUrl: 'src/assets/images/logoen.png',
+    logoUrl: LogoMudan,
     models: [
       {
         id: 'md6773',
         name: 'MD6773',
         motor: 'combustion',
         category: 'interurbano',
-        description: 'Máxima seguridad y confort en su clase. Diseñado para ofrecer la mejor experiencia de viaje en rutas premium.',
+        description: 'El Mudan MD6773 es un autobús compacto, versátil y confiable, diseñado para ofrecer eficiencia y comodidad en el transporte urbano o de corta distancia. Su diseño moderno y aerodinámico se complementa con un interior funcional y ergonómico, ideal para rutas con alta rotación de pasajeros. Destaca por su bajo consumo de combustible, mantenimiento sencillo y gran maniobrabilidad, convirtiéndolo en una opción rentable y duradera para flotas empresariales o municipales.',
         imageUrl: [
           'https://image.made-in-china.com/202f0j00pgefHuIlasqb/2982cc-Mudan-Star-Model-19seats-Diesel-Minibus.webp',
           'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+9800+1',
           'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+9800+2'
         ],
+        imageSpecs: '',
         specs: [
             {
-            engine: 'ISF3.8S3154 (115KW，500N.M，Euro III)',
-            dimension: '7740x2240x2980',
+            dimension: '7740×2240×2980',
             neumatico: 'Neumáticos estándar 215/75R17.5 ( con neumático de repuesto)',
-            disposicion_de_asientos: '2+1',
             velocidad_maxima: '100 km/h',
-            tipo_de_conduccion:'LHD' ,
             cantidad_de_asientos:'25+1',
 
         }],
@@ -317,20 +314,18 @@ export const busesBrands = [
         name: 'MD6833',
         motor: 'combustion',
         category: 'interurbano',
-        description: 'Cero emisiones, cero ruido. El futuro del transporte público urbano es silencioso y limpio.',
+        description: 'El Mudan MD6833 combina estilo, potencia y confort en un autobús de tamaño medio ideal para transporte interurbano o turístico. Con un diseño elegante y aerodinámico, ofrece una conducción estable y segura, mientras que su interior optimiza el espacio para brindar máxima comodidad a los pasajeros. Su excelente relación entre rendimiento y durabilidad lo convierte en una alternativa inteligente para empresas que buscan eficiencia y buena presencia en sus unidades.',
         imageUrl: [
           'https://image.made-in-china.com/155f0j00HDPeIKltbjoi/Used-Y-Tong-Coach-Bus-Automatic-Diesel-Coach-Bus-Tourist-for-Sale.jpg',
           'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+7900+Eléctrico+1',
           'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+7900+Eléctrico+2'
         ],
+        imageSpecs: '',
         specs: [
             {
-            engine: 'ISDE160-30 (118KW，600N.M，Euro III)',
             dimension: ' 8300×2350×3180',
             neumatico: 'Neumáticos estándar 225/70R19.5（6+1 con neumático de repuesto)',
-            disposicion_de_asientos: '2+2',
             velocidad_maxima: '100 km/h',
-            tipo_de_conduccion:'LHD' ,
             cantidad_de_asientos:'30+1',
 
         }],

@@ -5,6 +5,7 @@ import {Buses} from './components/Buses'
 import {Clientes} from './components/Clientes'
 import {Contacto} from './components/Contacto'
 import {Footer} from './components/Footer'
+import { Repuesto } from './components/Repuesto'
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <main>
           <Hero />
           <Buses />
+          <Repuesto/>
           <Clientes />
           <Contacto />
         </main>

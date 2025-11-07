@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@theme {
+  --color-blue-hh: #203468;
+  --color-blue-hh-light: #3C62C3;
+  --color-blue-hh-lighter: #829BD9;
+  --color-red-hh: #EF3240;  
+}

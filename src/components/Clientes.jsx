@@ -72,11 +72,11 @@ export const Clientes = () => {
      
 
   return (
-    <section id="clientes" className="py-20 bg-slate-900 overflow-hidden">
+    <section id="clientes" className="py-20 bg-blue-hh overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Lo que dicen nuestros clientes</h2>
-          <p className="text-slate-400 mt-2">La satisfacción de nuestros clientes es nuestra mayor prioridad.</p>
+          <p className="text-slate-300 mt-2">La satisfacción de nuestros clientes es nuestra mayor prioridad.</p>
         </div>
 
         <div className="relative w-full flex justify-center items-center">
@@ -131,7 +131,7 @@ export const Clientes = () => {
                       <img src={testimonial.imageBus} alt="Bus del cliente" className="w-full h-48 object-cover rounded-lg mb-6 shadow-lg" />
                       <p className="text-slate-300 italic text-lg mb-6">"{testimonial.quote}"</p>
                       <div className="flex items-center mt-auto">
-                        <img src={testimonial.imageUrl} alt={`Foto de ${testimonial.name}`} className="w-14 h-14 rounded-full mr-4 border-2 border-blue-400"/>
+                        <img src={testimonial.imageUrl} alt={`Foto de ${testimonial.name}`} className="w-14 h-14 rounded-full mr-4 border-2 border-blue-hh-lighter shadow-md"/>
                         <div>
                           <h4 className="font-bold text-white text-lg">{testimonial.name}</h4>
                           <p className="text-slate-400 text-sm">{testimonial.company}</p>
@@ -160,7 +160,7 @@ export const Clientes = () => {
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`w-3 h-3 rounded-full transition-colors ${activeIndex === index ? 'bg-blue-500' : 'bg-slate-600 hover:bg-slate-500'}`}
+              className={`w-3 h-3 rounded-full transition-colors ${activeIndex === index ? 'bg-blue-hh-lighter' : 'bg-slate-600 hover:bg-slate-500'}`}
               aria-label={`Ir al testimonio ${index + 1}`}
             />
           ))}

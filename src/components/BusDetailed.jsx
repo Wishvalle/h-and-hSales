@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BusCarousel } from './BusCarousel';
+import Logo from '../assets/images/handh.svg';
 
 const CloseIcon = ({ className = "h-6 w-6" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,7 +33,7 @@ export const BusDetailed = ({ bus, onClose }) => {
         {/* Encabezado del Modal */}
             <header className='bg-white backdrop-blur-md sticky top-0 z-50' >
               <div className="flex sm:flex-row items-center mx-auto px-8 pt-4">
-                <img src="src/assets/images/handh.svg" alt={`Logo de la marca`} className="w-35 h-auto object-cover rounded-lg flex-shrink-0" />
+                <img src={Logo} alt={`Logo de la marca`} className="w-35 h-auto object-cover rounded-lg flex-shrink-0" />
                 
                 <div className="flex-grow w-full">
                     <h2 className="flex center justify-center items-center text-3xl font-bold text-gray-900 text-center">{bus.name}</h2>
@@ -56,6 +57,11 @@ export const BusDetailed = ({ bus, onClose }) => {
           {/* Tabla de Especificaciones */}
           <div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800 border-b pb-2">Especificaciones</h3>
+              {/* Tabla de Especificaciones
+                <div className="mt-4">
+                  <img src={bus.imageSpecs} alt={`Especificaciones de ${bus.name}`} className="w-full h-auto rounded-lg shadow-md" />
+                </div> */}
+              
             <div className="overflow-x-auto">
               <table className="w-full text-left">
                 <tbody>
