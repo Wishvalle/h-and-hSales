@@ -2,8 +2,6 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { busesBrands } from './Bus';
 import { BusDetailed } from './BusDetailed';
 
-// Asegúrate de que las marcas tengan un logoUrl por defecto si no lo tienen
-
 const busBrands = busesBrands.map(brand => ({
   ...brand,
   logoUrl: brand.logoUrl || 'https://placehold.co/200x100/ffffff/000000?text=Logo+No+Disponible'
@@ -22,7 +20,6 @@ export const Buses = () => {
     const resultsRef = useRef(null); 
     const isInitialMount = useRef(true);
 
-    // Maneja el clic en una marca
     const handleBrandClick = (brand) => {
         setSelectedBrand(brand);
         setSelectedMotor('combustion');
@@ -44,36 +41,6 @@ export const Buses = () => {
       setModalModel(null);
     };
 
-    //Opciones para los filtros de tipo combustible/electrico y el tipo de bus
-
-    const categoryOptions1 = {
-        asiastar: {
-            combustion: {
-                todos: 'Todos',
-                interurbano: 'Interurbano',
-                urbano: 'Urbano',
-                microbus: 'Microbús'
-            },
-            electrico: {
-                todos: 'Todos',
-                interurbano: 'Interurbano',
-                urbano: 'Urbano'
-            }
-        },
-        mudan: {
-            todos: 'Todos',
-            combustion: {
-                todos: 'Todos',
-                interurbano: 'Interurbano'
-            },
-            electrico: {
-                todos: 'Todos',
-                interurbano: 'Interurbano'
-            }
-        }
-    };
-
-    // Filtra los modelos según la marca y el tipo seleccionados
     const categoryOptions = useMemo(() => {
     if (!selectedBrand || !selectedMotor) return {};
     const categoryNames = { interurbano: 'Interurbano', urbano: 'Urbano', microbus: 'Microbús' };
@@ -95,7 +62,7 @@ export const Buses = () => {
     }
     // Si hay una referencia al contenedor de resultados, hacemos scroll.
     if (resultsRef.current) {
-      const headerOffset = 80; // La altura de tu header (h-20)
+      const headerOffset = 80; // La altura del header (h-20)
       const elementPosition = resultsRef.current.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -170,19 +137,28 @@ export const Buses = () => {
                         ))}
                       </div>
                     </aside>
-                      
-                      {/* aqui agreegar el filtro de tamano */}
+                     
                     <main className='flex-1'>
                       {filteredModels.length > 0 ? (
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                           {filteredModels.map((model) => (
                             <div key={model.id} className='bg-blue-hh rounded-xl overflow-hidden shadow-lg flex flex-col transform transition-transform duration-300 hover:translate-y-[-5px]'>
-                              <img src={model.imageUrl[0]} alt={`Bus ${model.name}`} className='w-full h-56 object-cover' />
-                              <div className='p-6 flex flex-col'>
+                              <div className='relative'>
+                                <img src={model.imageUrl[0]} alt={`Bus ${model.name}`} className='w-full h-auto object-cover' />
+                                {model.hasElectricVersion && (
+                                <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg shadow-lg">
+                                  También modelo eléctrico
+                                </div>
+                                )}
+
+                              </div>
+                              
+
+                              <div className='p-6 flex flex-col flex-grow'>
                                 <h4 className='text-xl font-bold text-white mb-2'>{model.name}</h4>
-                                <p className='text-slate-300 mb-4 flex-grow text-justify'>{model.description.split('.')[0]+"."}</p>
+                                <p className='text-slate-300 mb-4 text-justify'>{model.description.split('.')[0]+"."}</p>
                                 
-                                <ul className='text-slate-300 space-y-2'> {/* cambiar estos 3 li */}
+                                <ul className='text-slate-300 space-y-2'> 
                                   
                                   {model.specs && Object.entries(model.specs[0]).map(([key, value]) => (
                                     <li key={key} className='flex items-start'>
@@ -197,7 +173,7 @@ export const Buses = () => {
                                   ))}
                                 </ul>
                                 
-                                <div className='flex justify-center mt-4'>
+                                <div className='flex justify-center mt-auto pt-4'>
                                   <button onClick={() => handleOpenModal(model)} className='px-6 py-2 rounded-md font-semibold transition-colors bg-blue-hh-light text-white hover:bg-blue-hh-lighter'>Ver más detalles</button>
                                   
                                 </div>

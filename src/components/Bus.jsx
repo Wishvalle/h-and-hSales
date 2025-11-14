@@ -38,7 +38,8 @@ export const busesBrands = [
             cantidad_de_asientos:'49+1+1',
 
         }],
-        size: '12m'
+        size: '12m',
+        hasElectricVersion: true
       },
       {
         id: 'ybl6128hx93',
@@ -146,7 +147,8 @@ export const busesBrands = [
             cantidad_de_asientos:'24+1',
 
         }],
-        size: '10.5m'
+        size: '10.5m',
+        hasElectricVersion: true
       },
       {
         id: 'js6108gha',
