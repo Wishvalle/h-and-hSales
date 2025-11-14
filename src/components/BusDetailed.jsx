@@ -11,7 +11,12 @@ const CloseIcon = ({ className = "h-6 w-6" }) => (
 export const BusDetailed = ({ bus, onClose }) => {
 
     if (!bus) return null;
-  
+
+  const whatsppNumber = "50689166060";
+  const messageTemplate = `Buenas H&H Auto Sales, me gustaría saber más sobre el modelo ${bus.name} de tipo: ${bus.motor}, que vi en la página web.`;
+  const encodedMessage = encodeURIComponent(messageTemplate);
+  const whatsappLink = `https://wa.me/${whatsppNumber}?text=${encodedMessage}`;  
+
   // Evita que el scroll de la página de fondo funcione cuando el modal está abierto
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -32,13 +37,11 @@ export const BusDetailed = ({ bus, onClose }) => {
       >
         {/* Encabezado del Modal */}
             <header className='bg-white backdrop-blur-md sticky top-0 z-50' >
-              <div className="flex sm:flex-row items-center mx-auto px-8 pt-4">
-                <img src={Logo} alt={`Logo de la marca`} className="w-35 h-auto object-cover rounded-lg flex-shrink-0" />
-                
-                <div className="flex-grow w-full">
-                    <h2 className="flex center justify-center items-center text-3xl font-bold text-gray-900 text-center">{bus.name}</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 items-center mx-auto px-8 pt-4">
+                <div className='flex justify-start'>
+                  <img src={Logo} alt={`Logo de la marca`} className="w-35 h-auto object-contain" />
                 </div>
-
+                <h2 className="text-center text-2xl sm:text-3xl font-bold text-gray-900">{bus.name}</h2>
                 <button onClick={onClose} className=" absolute top-4 right-2 text-2xl text-gray-500 hover:text-gray-800">
                     <CloseIcon className="h-8 w-8" />
                 </button>
@@ -47,7 +50,7 @@ export const BusDetailed = ({ bus, onClose }) => {
 
         <div className="p-8">
           
-          <p className="text-gray-600 mb-6">{bus.description}</p>
+          <p className="text-gray-600 mb-6 text-justify">{bus.description}</p>
           
           {/* Carrusel de Imágenes */}
           <div className="mb-6">
@@ -96,7 +99,7 @@ export const BusDetailed = ({ bus, onClose }) => {
             >
               Cerrar
             </button>
-            <a href="#contacto" onClick={onClose} className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+            <a href={whatsappLink} onClick={onClose} className="bg-blue-hh text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-hh-light transition-colors">
               Contactar para cotizar
             </a>
           </div>

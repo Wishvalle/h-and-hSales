@@ -1,111 +1,34 @@
-import LogoMudan from '../assets/images/logoen.png';
+import LogoMudan from '../assets/images/mudanLogo.png';
+import LogoAsiastar from '../assets/images/asiastarLogo.png';
 
-import kinkong1 from '../assets/images/asiastarImg/kingkong/kingkong_01.jpeg';
+import { Js6108IMGS } from '../assets/images/asiastarImg/js6108/Js6108IMGS';
+import { Js6108ghaIMGS } from '../assets/images/asiastarImg/js6108gha/Js6108ghaIMGS';
+import { Js6181ghbevIMGS } from '../assets/images/asiastarImg/js6181ghbev/Js6181ghbevIMGS';
+import { KinkongIMGS } from '../assets/images/asiastarImg/kingkong/KinkongIMGS';  
+import { Ybl6110hIMGS } from '../assets/images/asiastarImg/ybl6110h/Ybl6110hIMGS';
+import { Ybl6119hbevIMGS } from '../assets/images/asiastarImg/ybl6119hbev/Ybl6119hbevIMGS';
+import { Ybl6128hIMGS } from '../assets/images/asiastarImg/ybl6128h/Ybl6128hIMGS';
+import { Ybl6128hx93IMGS } from '../assets/images/asiastarImg/ybl6128hx93/Ybl6128hx93IMGS'; 
+import { Ybl6129hIMGS } from '../assets/images/asiastarImg/ybl6129h/Ybl6129hIMGS';
+import { Ybl6829hIMGS } from '../assets/images/asiastarImg/ybl6829h/Ybl6829hIMGS';
 
-import { KinkongIMGS } from '../assets/images/asiastarImg/kingkong/KinkongIMGS';
+import { MD6833IMGS } from '../assets/images/mudanImg/md6833/MD6833IMGS';
+import { MD6773IMGS } from '../assets/images/mudanImg/md6773/MD6773IMGS';
 
 export const busesBrands = [
   
   {
     id: 'asiastar',
     name: 'AsiaStar',
-    logoUrl: 'https://i.namu.wiki/i/1b9uXJEpZl13KNhqeR3N8f8LoEXXPxK5a1v2tqFrcyYWopoCYPADFI1wh_lb_eJpB1jadq-AaN6POlr6wsBUSQ.webp',
+    logoUrl: LogoAsiastar,
     models: [
-      {
-        id: 'kingkong',
-        name: 'Serie King Kong',
-        motor: 'combustion',
-        category: 'interurbano',
-        description: 'La Serie King Kong de AsiaStar impone presencia y elegancia en cada kilómetro, diseñada para el transporte interurbano y turístico de alto nivel, combina líneas modernas con un interior espacioso y cómodo. Su estructura robusta, acompañada de tecnología confiable y un rendimiento eficiente, garantiza viajes seguros, placenteros y rentables para operadores y pasajeros por igual. Ideal para quienes buscan un equilibrio perfecto entre potencia, confort y prestigio.',
-        imageUrl: KinkongIMGS,
-        imageSpecs: '',
-        specs: [
-            {
-            dimension: ' 12010x2550x3900 / 12600×2550×3800',
-            neumatico: 'Neumáticos estándar doble linea 315/80R22.5 ( con neumático de repuesto)',
-            velocidad_maxima: '120 km/h',
-            cantidad_de_asientos:'53+1+1',
-
-        }],
-        size: '12m y 12.5m'
-      },
-      {
-        id: 'ybl6110hybl6121h',
-        name: 'YBL6110H / YBL6121H',
-        motor: 'combustion',
-        category: 'interurbano',
-        description: 'Los modelos YBL6110H y YBL6121H de AsiaStar están diseñados para ofrecer un viaje interurbano cómodo, eficiente y moderno. Su diseño aerodinámico mejora el rendimiento en carretera, mientras que el interior amplio y ergonómico asegura confort tanto para pasajeros como conductores. Perfecto para empresas de transporte y turismo que buscan confiabilidad y elegancia en cada ruta.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202324954/ybl6121h88d97566-32ce-4eee-b6d1-1fe01a684932.png',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
-        imageSpecs: '',
-        specs: [
-            {
-            dimension: ' 10690×2500×3670 / 12000×2550×3620',
-            neumatico: 'Neumáticos estándar Jiatong 11R22.5 ( con neumático de repuesto) / 295/80R22.5 ( con neumático de repuesto)',
-            velocidad_maxima: '120 km/h',
-            cantidad_de_asientos:'43+1 / 49+1',
-
-        }],
-        size: '10.5m y 12m'
-      },
-      {
-        id: 'ybl6128hybl6130hybl6148h',
-        name: 'YBL6128H / YBL6130H / YBL6148H',
-        motor: 'combustion',
-        category: 'interurbano',
-        description: 'Esta serie representa la excelencia del diseño asiático en transporte de larga distancia. Con acabados premium, amplio espacio interior y tecnología enfocada en la eficiencia, estos modelos combinan rendimiento y confort. Su estructura sólida y aerodinámica brinda estabilidad y seguridad en cada viaje, ideal para operadores turísticos y líneas interprovinciales que buscan prestigio y rentabilidad.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202324954/ybl6130ha8a6b5e8-dbed-4055-87b6-366df1c6e897.png',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
-        imageSpecs: '',
-        specs: [
-            {
-            dimension: '12000×2550×3860 / 12650×2550×3860 / 13680×2550×3860',
-            neumatico: 'Neumáticos Michelin y Jiatong ( con neumático de repuesto)',
-            velocidad_maxima: '120 km/h',
-            cantidad_de_asientos:'49+1+1 / 49+1 / 55+1',
-
-        }],
-        size: '12m, 12.5m y 13.5m'
-      },
-      {
-        id: 'ybl6128hx93',
-        name: 'YBL6128H（X9-3)',
-        motor: 'combustion',
-        category: 'interurbano',
-        description: 'El YBL6128H (X9-3) destaca por su elegancia exterior y su diseño interior optimizado para el confort. Perfecto para viajes de turismo o transporte ejecutivo, este modelo combina potencia, eficiencia y un acabado de alta gama. Su motor de combustión ofrece un rendimiento confiable, mientras que la estructura aerodinámica reduce el consumo y mejora la experiencia de conducción.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202324954/ybl6128h-x9-3d0bff2b5-91ca-474c-afd9-1cacaf62c4eb.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
-        imageSpecs: '',
-        specs: [
-            {
-            dimension: '12000×2550×3860',
-            neumatico: 'Neumáticos Michelin 295/80R22.5 ( con neumático de repuesto y soporte de elevación)',
-            velocidad_maxima: '120 km/h',
-            cantidad_de_asientos:'49+1+1',
-
-        }],
-        size: '12m'
-      },
       {
         id: 'ybl6129h',
         name: 'YBL6129H',
         motor: 'combustion',
         category: 'interurbano',
         description: 'El AsiaStar YBL6129H redefine el estándar del transporte interurbano con una mezcla equilibrada de potencia, confort y diseño moderno. Su estructura resistente y su interior ergonómico garantizan un viaje placentero incluso en trayectos largos. Ideal para operadores que buscan confiabilidad, estilo y eficiencia en un solo vehículo.',
-        imageUrl: [
-          'https://www.asiastarbuses.com/uploads/202124954/ybl6129h30517624834.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Ybl6129hIMGS,
         imageSpecs: '',
         specs: [
             {
@@ -118,16 +41,84 @@ export const busesBrands = [
         size: '12m'
       },
       {
+        id: 'ybl6128hx93',
+        name: 'YBL6128H（X9-3)',
+        motor: 'combustion',
+        category: 'interurbano',
+        description: 'El YBL6128H (X9-3) destaca por su elegancia exterior y su diseño interior optimizado para el confort. Perfecto para viajes de turismo o transporte ejecutivo, este modelo combina potencia, eficiencia y un acabado de alta gama. Su motor de combustión ofrece un rendimiento confiable, mientras que la estructura aerodinámica reduce el consumo y mejora la experiencia de conducción.',
+        imageUrl: Ybl6128hx93IMGS,
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: '12000×2550×3860',
+            neumatico: 'Neumáticos Michelin 295/80R22.5 ( con neumático de repuesto y soporte de elevación)',
+            velocidad_maxima: '120 km/h',
+            cantidad_de_asientos:'49+1+1',
+
+        }],
+        size: '12m'
+      },
+      {
+        id: 'ybl6128hybl6130hybl6148h',
+        name: 'YBL6128H - YBL6130H - YBL6148H',
+        motor: 'combustion',
+        category: 'interurbano',
+        description: 'Esta serie representa la excelencia del diseño asiático en transporte de larga distancia. Con acabados premium, amplio espacio interior y tecnología enfocada en la eficiencia, estos modelos combinan rendimiento y confort. Su estructura sólida y aerodinámica brinda estabilidad y seguridad en cada viaje, ideal para operadores turísticos y líneas interprovinciales que buscan prestigio y rentabilidad.',
+        imageUrl: Ybl6128hIMGS,
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: '12000×2550×3860 / 12650×2550×3860 / 13680×2550×3860',
+            neumatico: 'Neumáticos Michelin y Jiatong ( con neumático de repuesto)',
+            velocidad_maxima: '120 km/h',
+            cantidad_de_asientos:'49+1+1 / 49+1 / 55+1',
+
+        }],
+        size: '12m, 12.5m y 13.5m'
+      },
+      {
+        id: 'ybl6110hybl6121h',
+        name: 'YBL6110H - YBL6121H',
+        motor: 'combustion',
+        category: 'interurbano',
+        description: 'Los modelos YBL6110H y YBL6121H de AsiaStar están diseñados para ofrecer un viaje interurbano cómodo, eficiente y moderno. Su diseño aerodinámico mejora el rendimiento en carretera, mientras que el interior amplio y ergonómico asegura confort tanto para pasajeros como conductores. Perfecto para empresas de transporte y turismo que buscan confiabilidad y elegancia en cada ruta.',
+        imageUrl: Ybl6110hIMGS,
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: ' 10690×2500×3670 / 12000×2550×3620',
+            neumatico: 'Neumáticos estándar Jiatong 11R22.5 ( con neumático de repuesto) / 295/80R22.5 ( con neumático de repuesto)',
+            velocidad_maxima: '120 km/h',
+            cantidad_de_asientos:'43+1 / 49+1',
+
+        }],
+        size: '10.5m y 12m'
+      },
+      {
+        id: 'kingkong',
+        name: 'Serie King Kong',
+        motor: 'combustion',
+        category: 'interurbano',
+        description: 'La Serie King Kong de AsiaStar impone presencia y elegancia en cada kilómetro, diseñada para el transporte interurbano y turístico de alto nivel, combina líneas modernas con un interior espacioso y cómodo. Su estructura robusta, acompañada de tecnología confiable y un rendimiento eficiente, garantiza viajes seguros, placenteros y rentables para operadores y pasajeros por igual. Ideal para quienes buscan un equilibrio perfecto entre potencia, confort y prestigio.',
+        imageUrl: KinkongIMGS,
+        imageSpecs: '',
+        specs: [
+            {
+            dimension: '12010x2550x3900 - 12600×2550×3800 (mm)',
+            neumatico: 'Neumáticos estándar doble linea 315/80R22.5 ( con neumático de repuesto)',
+            velocidad_maxima: '120 km/h',
+            cantidad_de_asientos:'53+1+1',
+
+        }],
+        size: '12m y 12.5m'
+      },
+      {
         id: 'ybl6829hybl6859hybl6909h',
-        name: 'YYBL6829H / YBL6859H / YBL6909H',
+        name: 'YBL6829H - YBL6859H - YBL6909H',
         motor: 'combustion',
         category: 'interurbano',
         description: 'Compactos, eficientes y modernos, estos modelos son la solución perfecta para rutas interurbanas de media distancia. Su diseño versátil y aerodinámico permite un manejo ágil y estable, mientras que su interior está pensado para ofrecer comodidad sin comprometer la capacidad de pasajeros. Una opción rentable y confiable para flotas urbanas o turísticas.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202324954/ybl6859hdb5534de-f51a-4636-933b-2b2840975969.png',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Ybl6829hIMGS,
         imageSpecs: '',
         specs: [
             {
@@ -145,11 +136,7 @@ export const busesBrands = [
         motor: 'combustion',
         category: 'urbano',
         description: 'El modelo JS6108 de AsiaStar combina eficiencia, resistencia y diseño moderno en un autobús ideal para el entorno urbano. Su construcción robusta y su interior funcional ofrecen una experiencia de viaje segura y cómoda, mientras que su motor eficiente reduce el consumo sin sacrificar rendimiento. Perfecto para flotas municipales y transporte público de alta demanda.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202324954/js6108089e1367-4c82-4609-93fe-1a2f656f007a.png',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Js6108IMGS,
         imageSpecs: '',
         specs: [
             {
@@ -167,11 +154,7 @@ export const busesBrands = [
         motor: 'combustion',
         category: 'urbano',
         description: 'El AsiaStar JS6108GHA representa la nueva generación de autobuses urbanos: diseño europeo, interiores ergonómicos y construcción liviana que reduce el consumo y aumenta la durabilidad. Su configuración versátil permite múltiples versiones y adaptaciones, garantizando un servicio eficiente, cómodo y elegante para pasajeros y operadores en cualquier ciudad.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/uploads/202024954/js6108gha09076589172.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Js6108ghaIMGS,
         imageSpecs: '',
         specs: [
             {
@@ -189,11 +172,7 @@ export const busesBrands = [
         motor: 'electrico',
         category: 'urbano',
         description: 'El AsiaStar JS6181GHBEV redefine el transporte urbano con su imponente diseño articulado de 18 metros y propulsión 100% eléctrica. Ofrece cero emisiones, funcionamiento silencioso y una experiencia de viaje suave y cómoda. Su amplio interior, con gran capacidad de pasajeros, lo convierte en la opción ideal para ciudades que apuestan por un transporte público moderno, eficiente y sostenible.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230908110228cd72254b4ae24123b222f56bd36124b9.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Js6181ghbevIMGS,
         imageSpecs: '',
         specs: [
             {
@@ -212,11 +191,7 @@ export const busesBrands = [
         motor: 'electrico',
         category: 'interurbano',
         description: 'El modelo YBL6129HBEV ofrece el equilibrio perfecto entre elegancia, eficiencia y sostenibilidad. Con un diseño aerodinámico y motor totalmente eléctrico, garantiza cero emisiones y bajo costo operativo. Su interior cómodo y silencioso brinda una experiencia de viaje de alta calidad, ideal para transporte interurbano o turístico comprometido con el medio ambiente.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/2023090810460762e91696ad794473b3cd910d09b50c61.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Ybl6129hIMGS,
         imageSpecs: '',
         specs: [
             {
@@ -235,11 +210,7 @@ export const busesBrands = [
         motor: 'electrico',
         category: 'interurbano',
         description: 'El AsiaStar YBL6119HBEV es sinónimo de innovación eléctrica aplicada al transporte de pasajeros. Su diseño moderno y eficiente ofrece una conducción silenciosa y libre de emisiones, reduciendo costos de mantenimiento y operación. Ideal para recorridos interurbanos o corporativos que buscan combinar sostenibilidad, tecnología y comodidad en cada trayecto.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230908102828b5806c142d644c82b7178d6eb9a27157.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Ybl6119hbevIMGS,
         imageSpecs: '',
         specs: [
             {
@@ -258,11 +229,7 @@ export const busesBrands = [
         motor: 'electrico',
         category: 'urbano',
         description: 'El AsiaStar JS6108GHBEV combina la movilidad eléctrica con la eficiencia del diseño urbano. Compacto, ágil y totalmente libre de emisiones, este autobús ofrece un funcionamiento silencioso y sostenible. Su diseño interior ergonómico y adaptable lo hace perfecto para rutas urbanas con alta frecuencia, garantizando comodidad, accesibilidad y un bajo impacto ambiental.',
-        imageUrl: [
-          'https://es.asiastarbuses.com/Content/uploads/2023571662/20230908093051e23982e0ee694c7a912b0c34c1d32a4c.jpg',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+2',
-          'https://placehold.co/600x400/1e3a8a/ffffff?text=Bus+Mercedes+Tourismo+3'
-        ],
+        imageUrl: Js6108IMGS,
         imageSpecs: '',
         specs: [
             {
@@ -293,11 +260,7 @@ export const busesBrands = [
         motor: 'combustion',
         category: 'interurbano',
         description: 'El Mudan MD6773 es un autobús compacto, versátil y confiable, diseñado para ofrecer eficiencia y comodidad en el transporte urbano o de corta distancia. Su diseño moderno y aerodinámico se complementa con un interior funcional y ergonómico, ideal para rutas con alta rotación de pasajeros. Destaca por su bajo consumo de combustible, mantenimiento sencillo y gran maniobrabilidad, convirtiéndolo en una opción rentable y duradera para flotas empresariales o municipales.',
-        imageUrl: [
-          'https://image.made-in-china.com/202f0j00pgefHuIlasqb/2982cc-Mudan-Star-Model-19seats-Diesel-Minibus.webp',
-          'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+9800+1',
-          'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+9800+2'
-        ],
+        imageUrl: MD6773IMGS,
         imageSpecs: '',
         specs: [
             {
@@ -315,11 +278,7 @@ export const busesBrands = [
         motor: 'combustion',
         category: 'interurbano',
         description: 'El Mudan MD6833 combina estilo, potencia y confort en un autobús de tamaño medio ideal para transporte interurbano o turístico. Con un diseño elegante y aerodinámico, ofrece una conducción estable y segura, mientras que su interior optimiza el espacio para brindar máxima comodidad a los pasajeros. Su excelente relación entre rendimiento y durabilidad lo convierte en una alternativa inteligente para empresas que buscan eficiencia y buena presencia en sus unidades.',
-        imageUrl: [
-          'https://image.made-in-china.com/155f0j00HDPeIKltbjoi/Used-Y-Tong-Coach-Bus-Automatic-Diesel-Coach-Bus-Tourist-for-Sale.jpg',
-          'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+7900+Eléctrico+1',
-          'https://placehold.co/600x400/0284c7/ffffff?text=Bus+Volvo+7900+Eléctrico+2'
-        ],
+        imageUrl: MD6833IMGS,
         imageSpecs: '',
         specs: [
             {

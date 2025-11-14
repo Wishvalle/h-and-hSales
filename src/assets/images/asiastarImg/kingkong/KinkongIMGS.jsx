@@ -1,8 +1,8 @@
-import kinkong1 from './kingkong_01.jpeg';
-import kinkong2 from './kingkong_02.jpeg';
-import kinkong3 from './kingkong_03.jpeg';
-import kinkong4 from './kingkong_04.jpeg';
-import kinkong5 from './kingkong_05.jpeg';
+import kinkong1 from './kingkong-01.png';
+import kinkong2 from './kingkong-02.png';
+import kinkong3 from './kingkong-03.png';
+import kinkong4 from './kingkong-04.png';
+import kinkong5 from './kingkong-05.png';
 
 export const KinkongIMGS = [
   kinkong1,

@@ -3,7 +3,7 @@ import BusVideo from '../assets/video/busesHyH.mp4';
 export const Hero = () => (
   <section id="inicio" className="relative text-white overflow-hidden h-screen min-h-[500px] flex items-center justify-center">
     
-    <video src={BusVideo} autoPlay muted loop className="absolute inset-0 w-full h-full object-cover z-0"></video>
+    <video src={BusVideo} autoPlay muted loop playsInline disablePictureInPicture className="absolute inset-0 w-full h-full object-cover z-0"></video>
     <div className='absolute top-0 left-0 w-full h-screen bg-black opacity-60 z-10'> </div>
 
     <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">

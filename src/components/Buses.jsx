@@ -25,7 +25,7 @@ export const Buses = () => {
     // Maneja el clic en una marca
     const handleBrandClick = (brand) => {
         setSelectedBrand(brand);
-        // Al cambiar de marca, no se resetea el motor, solo la categoría.
+        setSelectedMotor('combustion');
         setSelectedCategory('todos');
     };
 
@@ -95,12 +95,19 @@ export const Buses = () => {
     }
     // Si hay una referencia al contenedor de resultados, hacemos scroll.
     if (resultsRef.current) {
-      resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const headerOffset = 80; // La altura de tu header (h-20)
+      const elementPosition = resultsRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
-  }, [selectedMotor, selectedCategory]);
+  }, [selectedBrand,selectedMotor, selectedCategory]);
   
     return (
-      <section id='buses' className='py-20 bg-sky-50'>
+      <section id='buses' className='py-20 bg-sky-50' ref={resultsRef}>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
 
         <div className='text-center mb-12'>
@@ -173,7 +180,7 @@ export const Buses = () => {
                               <img src={model.imageUrl[0]} alt={`Bus ${model.name}`} className='w-full h-56 object-cover' />
                               <div className='p-6 flex flex-col'>
                                 <h4 className='text-xl font-bold text-white mb-2'>{model.name}</h4>
-                                <p className='text-slate-300 mb-4 flex-grow'>{model.description}</p>
+                                <p className='text-slate-300 mb-4 flex-grow text-justify'>{model.description.split('.')[0]+"."}</p>
                                 
                                 <ul className='text-slate-300 space-y-2'> {/* cambiar estos 3 li */}
                                   
@@ -182,7 +189,7 @@ export const Buses = () => {
                                       <span className='text-blue-300 mr-2 mt-1'>✓</span>
                                       
                                       <div>
-                                        <span className='font-semibold capitalize'>{key.replace(/_/g, ' ')}: </span>
+                                        <span className='font-bold capitalize'>{key.replace(/_/g, ' ')}: </span>
                                         <span className='text-slate-300'>{value}</span>
                                         
                                       </div>

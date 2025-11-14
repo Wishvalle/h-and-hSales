@@ -24,7 +24,7 @@ const sparePartBrands = [
 
 export const Repuesto = () => (
   <section id="repuestos" className="bg-sky-50 text-zinc-950">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+    <div className="container mx-auto pt-20 pb-40 sm:px-6 lg:px-8 pb-20">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold">Repuestos de Calidad para sus Buses</h2>   
         <p className="text-slate-800 mt-2">También contamos con una amplia gama de repuestos originales y compatibles para mantener su flota en óptimas condiciones.</p>   
